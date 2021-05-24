@@ -1,6 +1,8 @@
 package patterns.factory_methods
 
 import patterns.factory_methods.half_simple.enums.PersonTypeEnum
+import patterns.factory_methods.real_example_simple.ClientDAO
+import patterns.factory_methods.real_example_simple.model.ClientModel
 import patterns.factory_methods.simple.factory.ManPersonFactory
 import patterns.factory_methods.simple.factory.SuperManPersonFactory
 import patterns.factory_methods.simple.model.PersonModel
@@ -42,5 +44,12 @@ class TestFactoryMethod {
         println(manPersonFactory.toString())
     }
 
+    fun realExampleSimple(){
+        println(":: Real example Simple Factory Method")
+
+        val createClient = ClientModel("Lucas","Dev")
+        ClientDAO(useMySql = true).createClient(createClient)
+        ClientDAO(useMySql = false).createClient(createClient)
+    }
 
 }
