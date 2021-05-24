@@ -1,6 +1,6 @@
-package patterns.factory_methods.factory
+package patterns.factory_methods.simple.factory
 
-import patterns.model.PersonModel
+import patterns.factory_methods.simple.model.PersonModel
 
 abstract class PersonFactory {
 

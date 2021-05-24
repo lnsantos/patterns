@@ -1,4 +1,4 @@
-package patterns.model
+package patterns.factory_methods.simple.model
 
 data class PersonModel(
     val name: String,
