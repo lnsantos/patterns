@@ -1,4 +1,4 @@
-package patterns.factory_methods.real_example_simple.factory
+package patterns.factory_methods.real_example_simple.factory.database
 
 interface IDatabase {
 
